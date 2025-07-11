@@ -1,0 +1,20 @@
+dub_video_task:
+  description: >
+    Process the provided English video file to create a high-quality Hindi dubbed version.
+    The process involves:
+    1. Extracting and transcribing the English audio using Whisper AI
+    2. Translating the English transcript to Hindi using OpenAI GPT
+    3. Generating natural-sounding Hindi speech using Google Text-to-Speech
+    4. Synchronizing the Hindi audio with the original video timing
+    5. Creating the final video file with Hindi audio overlay
+    
+    Use the provided video file path and ensure the output maintains the original
+    video quality while replacing the audio track with accurate Hindi dubbing.
+    Handle any audio duration mismatches by adjusting the generated speech appropriately.
+    
+    Your final output must be the complete file path to the successfully created
+    Hindi dubbed video file.
+  expected_output: >
+    The absolute file path to the Hindi dubbed video file. The video should be
+    playable and contain the original visual content with clear, synchronized
+    Hindi audio dubbing that accurately conveys the original English content.
